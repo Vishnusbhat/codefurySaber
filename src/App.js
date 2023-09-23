@@ -1,15 +1,25 @@
-import background from './images/Background.png'
+
 import './App.css';
+import Navbar from './components/navbar';
+import Headroom from 'react-headroom';
+import Footer from './components/footer';
+import Topsection from './components/topsection';
+import Stories from './components/stories';
+import Video from './components/video';
+
 
 function App() {
   return (
-    <div>
-      <div className=' absolute inset-x-0 top-0 -z-20 mx-auto mx-w-[1800px]'>
-        <img src={background} alt="" />
-      </div>
-      <div>
-        
-      </div>
+    <div className= ' min-h-[580dvh] max-h-[500dvh] flex flex-col'>
+      <Headroom>
+      <Navbar/>
+      </Headroom>
+
+
+      <Topsection/>
+      <Video/>
+      <Stories/>
+      <Footer/>
     </div>
   );
 }
