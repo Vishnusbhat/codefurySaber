@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import background from './images/Background.png'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className=' absolute inset-x-0 top-0 -z-20 mx-auto mx-w-[1800px]'>
+        <img src={background} alt="" />
+      </div>
+      <div>
+        
+      </div>
     </div>
   );
 }
