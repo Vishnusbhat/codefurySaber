@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('gradient.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .menu-bar {
+            background-color: white;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .menu-bar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .menu-bar ul li {
+            display: inline;
+            margin-right: 30px;
+        }
+        .menu-bar ul li:last-child {
+            margin-right: 0;
+        }
+        .extra-box {
+            display: inline-block;
+            width: 50px;
+            height: 30px;
+            background-color: #555;
+            margin-left: 10px;
+        }
+        .contact-info {
+            margin-top: 20px;
+            display: block;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .social-media h2{
+            text-align: center;
+        }
+        .social-media {
+            
+            margin-top: 20px;
+        }
+        .social-media ul li {
+            display: inline;
+            margin-right: 10%;
+        }
+        .form-box {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-box input[type="text"],
+        .form-box input[type="email"],
+        .form-box input[type="tel"],
+        .form-box textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-box button[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 540px) {
+            .container {
+                padding: 10px;
+            }
+            .social-media ul li {
+                margin-right: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-bar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="extra-box"></div>
+        <div class="extra-box"></div>
+        <div class="extra-box"></div>
+    </div>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <div class="email"><p>Email: </p></div>
+            <div class="phone"><p>Phone: </p></div>
+            <div class="address"><p>Address: </p></div>
+        </div>
+        <div>
+            <p>Links to websites for help</p>
+        </div>
+       
+        <div class="form-box">
+            <h2>Leave a Message</h2>
+            <form action="#" method="post">
+                <input type="text" id="name" name="name" placeholder="Name:" required><br>
+                <input type="email" id="email" name="email" placeholder="Email:" required><br>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number:"><br>
+                <input type="text" id="address" name="address" placeholder="Address:"><br>
+                <textarea id="comments" name="comments" placeholder="Comments:"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="social-media">
+            <h2>Follow Us on Social Media</h2>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
