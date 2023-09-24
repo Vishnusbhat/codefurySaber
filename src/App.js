@@ -6,6 +6,7 @@ import Footer from './components/footer';
 import Topsection from './components/topsection';
 import Stories from './components/stories';
 import Video from './components/video';
+import DJ from '../src/components/stories/DJ'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Topsection/>
       <Video/>
       <Stories/>
+      <DJ/>
       <Footer/>
     </div>
   );
