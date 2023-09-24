@@ -11,17 +11,23 @@ import DJ from '../src/components/stories/DJ'
 
 function App() {
   return (
-    <div className= ' min-h-[580dvh] max-h-[500dvh] flex flex-col'>
+    <div className= ' min-h-[580dvh] max-h-[500dvh] flex flex-col w-[1520px]'>
       <Headroom>
       <Navbar/>
       </Headroom>
 
-
       <Topsection/>
+
       <Video/>
+
       <Stories/>
-      <DJ/>
+
+
       <Footer/>
+        
+
+
+      
     </div>
   );
 }
